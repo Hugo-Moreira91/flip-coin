@@ -129,10 +129,12 @@ main {
 @media (max-width: 30rem) {
     .title-stroke,
     .title-fill {
-        font-size: 3.25rem;
+        font-size: 3.5rem;
     }
 
     .text-instructions {
-        font-size: 1rem;
+        max-width: 20rem;
+        font-size: 1.25rem;
+        text-align: center;
     }
 }

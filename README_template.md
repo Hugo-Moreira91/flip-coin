@@ -6,33 +6,24 @@
 
 <div align="center">
   <h3>
-    <a href="{https://your-demo-link.your-domain}">
-      Demo
-    </a>
-    <span> | </span>
-    <a href="{https://your-url-to-the-solution}">
-      Solution
+    <a href="https://hugo-moreira91.github.io/flip-coin/">
+      Solução
     </a>
     <span> | </span>
     <a href="https://devchallenges.io/challenge/flip-the-coin">
-      Challenge
+      Desafio
     </a>
   </h3>
 </div>
 
-<!-- TABLE OF CONTENTS -->
-
-## Table of Contents
+## Tabela de Conteúdos
 
 - [Overview](#overview)
-  - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
-- [Built with](#built-with)
-- [Features](#features)
-- [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
-
-<!-- OVERVIEW -->
+  - [O que aprendi](#o-que-aprendi)
+  - [Recursos úteis](#recursos-úteis)
+- [Construído com](#construído-com)
+- [Características](#características)
+- [Autor](#autor)
 
 ## Overview
 
