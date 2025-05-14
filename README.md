@@ -1,96 +1,79 @@
-# DevChallenges.io - Flip The Coin
+<h1 align="center">Flip The Coin | devChallenges</h1>
 
-![Thumbnail for the Flip The Coin coding challenge](./thumbnail.jpg)
+<div align="center">
+   Solução para o desafio <a href="https://devchallenges.io/challenge/flip-the-coin" target="_blank">Flip The Coin</a> do <i>site</i> <a href="http://devchallenges.io" target="_blank">devChallenges.io</a>.
+</div>
 
-## Welcome! 👋
+<div align="center">
+  <h3>
+    <a href="https://hugo-moreira91.github.io/flip-coin/">
+      Solução
+    </a>
+    <span> | </span>
+    <a href="https://devchallenges.io/challenge/flip-the-coin">
+      Desafio
+    </a>
+  </h3>
+</div>
 
-Welcome to this responsive web coding challenge.
+## Tabela de Conteúdos
 
-[devChallenges.io](https://devchallenges.io/) challenges are designed to help you enhance your coding skills by building realistic projects.
+- [Visão geral](#visão-geral)
+  - [O que aprendi](#o-que-aprendi)
+  - [Recursos úteis](#recursos-úteis)
+- [Construído com](#construído-com)
+- [Características](#características)
+- [Autor](#autor)
 
-## The challenge
+## Visão geral
 
-Your task is to create a web page that closely resembles the provided design.
+![demonstração](./public/medias/project-flip-coin-demonstration.gif)
 
-You can use any tools or resources you like to complete this challenge. Each challenge is designed to practice different skills, so be sure to check the challenge description for more information.
+Acima temos uma breve demonstração do projeto em funcionamento. 
 
-If you need help or have any questions, feel free to [join our community](https://github.com/orgs/devchallenges-io/discussions) and ask for support.
+Seu funcionamento gira em torno do botão "RANDOM": ao pressioná-lo, gera-se randomicamente os lados de uma moeda, *Heads* (Cara) e *Tails* (Coroa).
 
-## Where to find everything
+### O que aprendi
 
-Your goal is to build the project using the provided design. You can find the designs in the challenge editor once you start the challenge or in the `/design` folder. Please note that the `/design` folder may not include all the designs you need, so be sure to check the editor for more details.
+Além da estruturação do projeto via HTML, estilização e responsividade através do CSS, o foco maior foi em planejar e construir o funcionamento do projeto via JavaScript.
 
-The designs are in JPG format, so you'll need to use your best judgment for styles such as `font-size`, `padding`, and `margin`. Additionally, spacing guides are available for each challenge, but access to them requires a [Pro membership](https://devchallenges.io/pro). With a Pro membership, you can also download the Figma design files.
+Após selecionar o elemento *button* do DOM via método *getElementById* adicionei a ele um "ouvinte" através do evento *addEventListener*, detectando os cliques sobre o botão.
 
-All the required assets can be found in the `/resources` folder. You may need to optimize the assets as necessary.
+A cada clique, o método *random()* da biblioteca *Math* gera um valor entre 0 (zero) e 1 (um). Definiu-se que, para valores menores que 0.5 teríamos o lado Cara (Heads). Logo, para valores entre 0.5 e 1, o lado Coroa (Tails).
 
-For more information about the challenge, access the challenge editor on [devChallenges.io](https://devchallenges.io/challenges-dashboard).
+Adicionei ao projeto um contador para sequências de Caras e Coroas.
 
-## Steps to Complete the Challenge on devChallenges.io
+Para exibir os elementos HTML na tela, utilizei a propriedade *innerHTML*.
 
-- [ ] Start by visiting [devChallenges.io](https://devchallenges.io/), navigate to the challenge page, and begin the challenge.
-- [ ] Once you have started the challenge, you will have access to the editor where you can download the necessary resources, check colors, fonts, and more.
-- [ ] Download the starter/resources, and if you are a Pro user, you can also download the Figma file.
-- [ ] Initialize the project as a Git repository.
-- [ ] Review the design and analyze the different versions for desktop, tablet, and mobile.
-- [ ] Plan your approach to the project by identifying reusable CSS classes and structuring your HTML content.
-- [ ] Define the base styles for your project, including font-family, font-size, and other general content styles.
-- [ ] Begin adding styles from the top of the page and work your way down, ensuring that each section is visually appealing and matches the provided design.
-- [ ] Optimize and resize the required assets from the `/images` folder as necessary.
-- [ ] Test your project's responsiveness by previewing it on different devices and screen sizes.
-- [ ] Once you are satisfied with your implementation, deploy your project to a hosting platform such as GitHub Pages, Vercel, or Netlify.
-- [ ] Submit your solution on devchallenges.io and aim to pass the design comparison and performance tests.
-- [ ] Replace the default `README.md` file with a custom one that explains your project and reflects on your learning experience. You can use the provided `README-template.md` as a starting point.
-- [ ] Share your solution with the devChallenges.io community by tweeting [@devchallengesio](https://twitter.com/devchallengesio) and mentioning the repository and live URLs in your tweet. You can also share your solution on other social channels or write a blog post about your experience.
-- [ ] Seek feedback from the community by using the provided templates or asking specific questions about your implementation.
+### Recursos úteis
 
-Good luck and enjoy building your project! 🚀
+- [Evento *addEventListener*](https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/addEventListener): artigo da MDN Web Docs que traz a explicação, sintaxe e exemplos de uso do evento em questão;
 
-## Deploying your project
+- [Método Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random): artigo da MDN explicando o uso do método *random* da biblioteca *Math*;
 
-Our recommended hosting options include:
+- [Element.innerHTML](https://developer.mozilla.org/pt-BR/docs/Web/API/Element/innerHTML): artigo da MDN o qual traz bons exemplos de uso da propriedade *innerHTML*, além da diferença do *textContent*.
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+### Construído com
 
-You can choose any of these solutions or explore other trusted providers. For more information, please refer to our guide on [free hosting platforms](https://devchallenges.io/learn/1-fundamentals/free-hosting-for-web-projects).
+- Marcações semânticas HTML
+- Propriedades personalizadas CSS
+- Flexbox
+- JavaScript
+- Responsividade
 
-## Create your own `README.md`
+## Características
 
-To use the Readme template, follow these steps:
+Este projeto foi desenvolvido para submissão de um desafio do *site* [DevChallenges](https://devchallenges.io/challenges-dashboard).
 
-1. Open the `README-template.md` file in your text editor.
-2. Replace the placeholder content with your own project information.
-3. Customize the sections and headings to fit your project's needs.
-4. Add a detailed description of your project, including its purpose and features.
-5. Reflect on your learning experience and any challenges you encountered during development.
-6. Delete the original `README.md` file.
-7. Rename the `README-template.md` file to `README.md`.
-8. Save the changes and commit the updated `README.md` file to your repository.
+## Autor
 
-By following these instructions, you can create a customized `README.md` file that effectively communicates your project to others.
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+  <img style="border-radius: 50%; width: 8.5rem" src="https://avatars.githubusercontent.com/u/129432443?s=400&u=ff3281ddf2cf31d4a71b01d46fcb4d8452398749&v=4" alt="Foto do autor">
+  <a style="margin: 1rem 0;" href="https://github.com/Hugo-Moreira91">Hugo Moreira 🚀</a>
+  <p>Feito com ❤️</p>
+</div>
 
-## More guides
+Entre em contato! ✍🏽
 
-Don't forget to check out the [devChallenges Curriculum](https://devchallenges.io/learn), which covers basic to advanced topics that are essential for your web development journey.
-
-## Sharing your solution
-
-There are several platforms where you can share your solution:
-
-1.  Tweet [@devchallengesio](https://x.com/devchallengesio) and mention **@devchallengesio**, including the repository and live URLs in your tweet. We would love to see what you have built and help spread the word.
-2.  Share your solution on other social channels such as LinkedIn and tag [devchallenges](https://www.linkedin.com/company/devchallenges).
-3.  Write a blog post about your experience building the project. Documenting your workflow, technical choices, and explaining your code is an excellent way to reinforce your learning. Popular platforms for writing include [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you have submitted it on the platform. Feel free to edit them and include specific questions when seeking feedback.
-
-The more specific your questions are, the more likely it is that another community member will provide feedback.
-
-## Feedback
-
-We value feedback and are always looking to improve our challenges and platform. If you have any suggestions or comments, please email us at hi\[at]devchallenges\[dot]io.
-
-This challenge is completely free. Please share it with anyone who would find it useful for practice.
-
-**Enjoy building!** 🚀
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Hugo%20Moreira-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/hugo-c%C3%A9sar-santos-moreira-a10823248/)
+[![Gmail Badge](https://img.shields.io/badge/-hugo.cesar91@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:hugo.cesar91@gmail.com)](mailto:hugo.cesar91@gmail.com)
