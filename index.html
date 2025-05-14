@@ -6,53 +6,37 @@
 
     <link
       rel="icon"
-      href="resources/favicon.ico"
+      href="./src/images/favicon.ico"
       type="image/x-icon"
       sizes="96x96"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/styles/style.css">
+
     <title>Flip the coin | devChallenges.io</title>
-
-    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        height: 100vh;
-      }
-
-      .author-info {
-        font-size: 14px;
-        text-align: center;
-        margin-top: 16px;
-        color: rgb(55, 65, 81);
-      }
-
-      .author-info a {
-        text-decoration: none;
-      }
-    </style>
   </head>
   <body>
-    <!-- 
+    <main>
+      <div class="title-container">
+        <h1 class="title-stroke">Flip the coin</h1>
+        <h1 class="title-fill">Flip the coin</h1>
+      </div>
+      <p class="text-instructions">Press the coin or the button to flip the coin</p>
+      <div class="result"></div>
+      <button id="btn-flip" class="btn btn-flip">RANDOM</button>
+    </main>
 
-    Flip a Coin Game
-    Press the coin or the button to flip the coin
-    Head
-    Tail
-    Random
-  
-    -->
-
-    <div class="author-info">
-      Coded by <a href="#">Your Name Here</a> | Challenge by
+    <footer class="author-info">
+      Coded by <a href="https://github.com/Hugo-Moreira91" target="_blank">Hugo Moreira</a> | Challenge by
       <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
         >devChallenges.io</a
       >.
-    </div>
+    </footer>
+
+    <script src="./src/js/index.js"></script>
   </body>
 </html>
